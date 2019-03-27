@@ -18,10 +18,10 @@
 # see https://www.answers.com/Q/How_do_you_make_a_yes_no_command_in_cmd to add more features
 # ============================================================================
 
-echo " _  _  ___  ___   __  ____  __  _  _  __"
-echo "( )( )(  ,\(   \ (  )(_  _)(  )( \( )/ _)"
-echo " )()(  ) _/ ) ) )/__\  )(   )(  )  (( (/\"
-echo " \__/ (_)  (___/(_)(_)(__) (__)(_)\_)\__/"
+#echo " _  _  ___  ___   __  ____  __  _  _  __"
+#echo "( )( )(  ,\(   \ (  )(_  _)(  )( \( )/ _)"
+#echo " )()(  ) _/ ) ) )/__\  )(   )(  )  (( (/\"
+#echo " \__/ (_)  (___/(_)(_)(__) (__)(_)\_)\__/"
 pwd
 ls -l
 
@@ -73,8 +73,7 @@ echo "----------------------------------------------------"
 echo "Setting HDMI Audio to the Jack"
 echo "----------------------------------------------------"
 echo " "
-hdmi2Jack='amixer cset numid=3 1'
-os.system(hdmi2Jack)
+sudo amixer cset numid=3 1
 echo " "
 echo "----------------------------------------------------"
 echo "Done settign Jack"
@@ -150,10 +149,10 @@ echo " "
 #echo "----------------------------------------------------"
 echo "All Done"
 #echo "----------------------------------------------------"
-echo " ___    __  _  _  ___ "
-echo "(   \  /  \( \( )(  _)"
-echo " ) ) )( () ))  (  ) _)"
-echo "(___/  \__/(_)\_)(___)"
+#echo " ___    __  _  _  ___ "
+#echo "(   \  /  \( \( )(  _)"
+#echo " ) ) )( () ))  (  ) _)"
+#echo "(___/  \__/(_)\_)(___)"
 
 #mp3File = 'wget https://cdn.instructables.com/ORIG/F1H/6Q8Z/J4YFREIR/F1H6Q8ZJ4YFREIR.mp3'
 #os.system(mp3File)
