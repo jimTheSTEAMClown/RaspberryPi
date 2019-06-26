@@ -18,10 +18,6 @@
 # see https://www.answers.com/Q/How_do_you_make_a_yes_no_command_in_cmd to add more features
 # ============================================================================
 
-#echo " _  _  ___  ___   __  ____  __  _  _  __"
-#echo "( )( )(  ,\(   \ (  )(_  _)(  )( \( )/ _)"
-#echo " )()(  ) _/ ) ) )/__\  )(   )(  )  (( (/\"
-#echo " \__/ (_)  (___/(_)(_)(__) (__)(_)\_)\__/"
 pwd
 ls -l
 
@@ -42,6 +38,31 @@ echo "----------------------------------------------------"
 echo " "
 sudo apt-get upgrade -y
 echo " "
+echo "----------------------------------------------------"
+echo "Done running Upgrade"
+echo "----------------------------------------------------"
+echo " "
+
+echo "----------------------------------------------------"
+echo "Installing wiringPi library"
+echo "----------------------------------------------------"
+echo " "
+echo "cloning the wiringPi Lib"
+echo "----------------------------------------------------"
+echo " "
+sudo git clone git://git.drogon.net/wiringPi
+echo " "
+echo "cd to wiringPi Lib"
+echo "----------------------------------------------------"
+echo " "
+sudo cd wiringPi
+echo " "
+echo "building the wiringPi Lib"
+echo "----------------------------------------------------"
+echo " "
+sudo ./build
+echo " "
+sudo gpio readall
 echo "----------------------------------------------------"
 echo "Done running Upgrade"
 echo "----------------------------------------------------"
