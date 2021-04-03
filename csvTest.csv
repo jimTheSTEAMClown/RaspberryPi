@@ -1,4 +1,4 @@
-date/time, robot_name, command, User, Source
+Yes Yes Yes, robot_name, command, User, Source
 2021-04-02 23:04:02.215208,Feather,open,Jim,user input
 2021-04-02 23:05:06.215208,Feather,close,Jim,user input
 2021-04-02 23:06:22.215208,Feather,reset,Jim,user input
