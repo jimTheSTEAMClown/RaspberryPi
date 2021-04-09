@@ -7,7 +7,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
 GPIO.setup(blink_led,GPIO.OUT)
 
-while(true):
+while(True):
   print("LED on")
   GPIO.output(blink_led,GPIO.HIGH)
   time.sleep(1)
