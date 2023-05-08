@@ -9,6 +9,8 @@ ls -l
 sudo raspi-config nonint do_change_locale en_US.UTF-8
 sudo raspi-config nonint do_configure_keyboard us
 sudo raspi-config nonint do_change_timezone America/Los_Angeles
+sudo raspi-config nonint do_wifi_country US
+
 
 sudo raspi-config nonint do_ssh 0
 sudo raspi-config nonint do_vnc 0
