@@ -2,6 +2,7 @@ import RPi.GPIO as GPIO
 from time import sleep
 
 GPIO.setmode(GPIO.BOARD)
+GPIO.setwarnings(False)
 
 # GND is on 20
 RED = 16
