@@ -173,10 +173,10 @@ echo "Now I'm going to install some standard apps that are not part"
 echo "of the standard Raspberry Pi Build, but I find you will use them lots..."
 echo "I'm installing:"
 echo " - Guake"
-echo " - cairo-dock"
+# echo " - cairo-dock" # < Need to figure out dependancy with Pluseaudio
 echo " - VIM"
 echo " - arduino"
-echo " - notepad-plus-plus"
+# echo " - notepad-plus-plus" # < nee to figure out how to install SNAP first
 echo " - conky "
 
 echo " "
@@ -194,11 +194,11 @@ echo " "
 sudo apt install guake -y
 echo " "
 echo "----------------------------------------------------"
-echo "Installing cairo-dock"
-echo "Running $ sudo apt install cairo-dock -y"
+# echo "Installing cairo-dock"
+# echo "Running $ sudo apt install cairo-dock -y"
 echo "----------------------------------------------------"
 echo " "
-sudo apt install cairo-dock -y
+# sudo apt install cairo-dock -y
 echo " "
 echo "----------------------------------------------------"
 echo "----------------------------------------------------"
@@ -216,18 +216,18 @@ echo " "
 sudo apt install arduino -y
 echo " "
 echo "----------------------------------------------------"
-echo "Installing notepad-plus-plus"
-echo "Running $ sudo snap install notepad-plus-plus"
-echo "----------------------------------------------------"
+# echo "Installing snap"
+# echo "Running $ sudo apt install snap -y"
+# echo "----------------------------------------------------"
+# echo " "
+# sudo apt install snap -y
 echo " "
-sudo snap install notepad-plus-plus
+# echo "----------------------------------------------------"
+# echo "Installing notepad-plus-plus"
+# echo "Running $ sudo snap install notepad-plus-plus"
+# echo "----------------------------------------------------"
 echo " "
-echo "----------------------------------------------------"
-echo "Installing notepad-plus-plus"
-echo "Running $ sudo snap install notepad-plus-plus"
-echo "----------------------------------------------------"
-echo " "
-sudo snap install notepad-plus-plus
+# sudo snap install notepad-plus-plus
 echo " "
 echo "----------------------------------------------------"
 echo "Installing conky"
