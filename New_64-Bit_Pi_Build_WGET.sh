@@ -21,9 +21,9 @@
 # ============================================================================
 # Cpoy These Line on the command line
 # ============================================================================
-# sudo wget -O ./classImageBuild/UbuntuClassImageUpdate.sh https://raw.githubusercontent.com/jimTheSTEAMClown/Linux/master/UbuntuClassImageUpdate.sh
-# sudo chmod 755 ./classImageBuild/UbuntuClassImageUpdate.sh
-# sudo cat ./classImageBuild/UbuntuClassImageUpdate.sh
+# sudo wget -O ./classImageBuild/New_64-Bit_Pi_Build_WGET.sh https://raw.githubusercontent.com/jimTheSTEAMClown/RaspberryPi/master/New_64-Bit_Pi_Build_WGET.sh
+# sudo chmod 755 ./classImageBuild/New_64-Bit_Pi_Build_WGET.sh
+# sudo cat ./classImageBuild/New_64-Bit_Pi_Build_WGET.sh
 
 # ============================================================================
 echo "    _   _   _     _   _     _   _   _     _   _     "
@@ -108,6 +108,7 @@ else
 echo "Skipping this install"
 fi
 
-# sudo wget -O ./classImageBuild/UbuntuClassImageUpdate.sh https://raw.githubusercontent.com/jimTheSTEAMClown/Linux/master/UbuntuClassImageUpdate.sh
-# sudo chmod 755 ./classImageBuild/UbuntuClassImageUpdate.sh
-# sudo cat ./classImageBuild/UbuntuClassImageUpdate.sh
+# sudo wget -O ./classImageBuild/New_64-Bit_Pi_Build_WGET.sh https://raw.githubusercontent.com/jimTheSTEAMClown/RaspberryPi/master/New_64-Bit_Pi_Build_WGET.sh
+# sudo chmod 755 ./classImageBuild/New_64-Bit_Pi_Build_WGET.sh
+# sudo cat ./classImageBuild/New_64-Bit_Pi_Build_WGET.sh
+# ./classImageBuild/New_64-Bit_Pi_Build_WGET.sh
