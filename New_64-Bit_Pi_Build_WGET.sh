@@ -49,7 +49,7 @@ pwd
 ls
 echo " "
 echo "----------------------------------------------------"
-echo "Do you wish WGET the Raspberry Pi 64-Bit SH Files?"
+echo "Do you wish to run the WGET the Raspberry Pi 64-Bit SH Files?"
 echo "----------------------------------------------------"
 select yn in "Yes" "No"; do
     case $yn in
@@ -108,11 +108,178 @@ echo "Done running Upgrade"
 echo "----------------------------------------------------"
 elif [ $yesInstall == "n" ] || [ $yesInstall == "N" ]
 then
+echo "Skipping Update & Upgrade"
+else
+echo "Skipping Update & Upgrade"
+fi
+
+echo " "
+echo "   ___  _____  ____  _  _  ____  _  _   ___    ___  _   _    "
+echo "  / __)(  _  )(  _ \( \/ )(_  _)( \( ) / __)  / __)( )_( )   "
+echo " ( (__  )(_)(  )___/ \  /  _)(_  )  ( ( (_-.  \__ \ ) _ (    "
+echo "  \___)(_____)(__)   (__) (____)(_)\_) \___/  (___/(_) (_)   "
+echo "  ___   ___  ____  ____  ____  ____  ___              "
+echo " / __) / __)(  _ \(_  _)(  _ \(_  _)/ __)             "
+echo " \__ \( (__  )   / _)(_  )___/  )(  \__ \             "
+echo " (___/ \___)(_)\_)(____)(__)   (__) (___/             "
+echo " "
+# ============================================================================
+echo "Now I'm going to Copy Some Shell Script User For Updates and Installs Of Stuff
+echo " "
+echo "Do you wish to install these? Dude, just say 'Yes' Trust me."
+echo "Enter y/Y or n/N or any Key?"
+read -p "WGET These Shell Scripts?: " yesInstall
+# elif statements
+if [ $yesInstall == "y" ] || [ $yesInstall == "Y" ]
+then
+echo "----------------------------------------------------"
+echo "Copying Shell Scripts"
+# Add Scripts Here
+echo " ******* Nothing To Copy Yet ******* "
+echo " "
+echo "-------------------------------------------------------"
+echo "  ___    __  _  _  ___  "
+echo " (   \  /  \( \( )(  _) "
+echo "  ) ) )( () ))  (  ) _) "
+echo " (___/  \__/(_)\_)(___) "
+echo " "
+echo "----------------------------------------------------"
+echo "Done Copying Shell Scripts"
+echo "----------------------------------------------------"
+
+elif [ $yesInstall == "n" ] || [ $yesInstall == "N" ]
+then
+echo "Skipping WGET Copy Of Shell Scripts"
+else
+echo "Skipping WGET Copy Of Shell Scripts"
+fi
+# ============================================================================
+
+
+
+# ============================================================================
+# The 10 Best Raspberry Pi Apps, Programs, and Software to Install
+# https://www.makeuseof.com/tag/top-apps-install-raspberry-pi/
+# What's your list of the best software/applications for your Raspberry Pi?
+# https://forums.raspberrypi.com/viewtopic.php?t=272664
+# Usefull / good programs to have on your Pi
+# https://forums.raspberrypi.com/viewtopic.php?t=245808
+# What's your list of the best software/applications for your Raspberry Pi?
+# https://forums.raspberrypi.com/viewtopic.php?t=272664
+# Install Just 7 Apps to Use Your Raspberry Pi Like a Work PC
+# https://www.makeuseof.com/apps-to-use-your-raspberry-pi-like-a-work-pc/
+# ============================================================================
+echo "Now I'm going to install some standard apps that are not part"
+echo "of the standard Raspberry Pi Build, but I find you will use them lots..."
+echo "I'm installing:"
+echo " - Guake"
+echo " - cairo-dock"
+echo " - VIM"
+echo " - arduino"
+echo " - notepad-plus-plus"
+echo " - conky "
+
+echo " "
+echo "Do you wish to install these? Dude, just say 'Yes' Trust me."
+echo "Enter y/Y or n/N or any Key?"
+read -p "Install this list of apps?: " yesInstall
+# elif statements
+if [ $yesInstall == "y" ] || [ $yesInstall == "Y" ]
+then
+echo "----------------------------------------------------"
+echo "Installing GUAKE"
+echo "Running $ sudo apt install guake -y"
+echo "----------------------------------------------------"
+echo " "
+sudo apt install guake -y
+echo " "
+echo "----------------------------------------------------"
+echo "Installing cairo-dock"
+echo "Running $ sudo apt install cairo-dock -y"
+echo "----------------------------------------------------"
+echo " "
+sudo apt install cairo-dock -y
+echo " "
+echo "----------------------------------------------------"
+echo "----------------------------------------------------"
+echo "Installing VIM"
+echo "Running $ sudo apt install vim -y"
+echo "----------------------------------------------------"
+echo " "
+sudo apt install vim -y
+echo " "
+echo "----------------------------------------------------"
+echo "Installing Arduino"
+echo "Running $ sudo apt install arduino -y"
+echo "----------------------------------------------------"
+echo " "
+sudo apt install arduino -y
+echo " "
+echo "----------------------------------------------------"
+echo "Installing notepad-plus-plus"
+echo "Running $ sudo snap install notepad-plus-plus"
+echo "----------------------------------------------------"
+echo " "
+sudo snap install notepad-plus-plus
+echo " "
+echo "----------------------------------------------------"
+echo "Installing notepad-plus-plus"
+echo "Running $ sudo snap install notepad-plus-plus"
+echo "----------------------------------------------------"
+echo " "
+sudo snap install notepad-plus-plus
+echo " "
+echo "----------------------------------------------------"
+echo "Installing conky"
+echo "Running $ sudo apt install conky -y"
+echo "----------------------------------------------------"
+echo " "
+sudo apt install conky -y
+echo " "
+
+
+
+echo " "
+echo "----------------------------------------------------"
+echo "Running App To Launch Them"
+echo "----------------------------------------------------"
+run cairo-dock
+echo "----------------------------------------------------"
+echo "Done running App installs and updates"
+echo "----------------------------------------------------"
+echo "Done running STUFF"
+echo "----------------------------------------------------"
+elif [ $yesInstall == "n" ] || [ $yesInstall == "N" ]
+then
 echo "Skipping this install"
 else
 echo "Skipping this install"
 fi
+# ============================================================================
+# sudo apt update
+# sudo apt upgrade -y
 
+
+echo "-------------------------------------------------------"
+echo "  ___    __  _  _  ___  "
+echo " (   \  /  \( \( )(  _) "
+echo "  ) ) )( () ))  (  ) _) "
+echo " (___/  \__/(_)\_)(___) "
+echo " "
+echo "----------------------------------------------------"
+echo "Done With Stuff"
+echo " "
+echo "----------------------------------------------------"
+echo "  _  _  ____  _  _  ____    ___  ____  ____  ____  ___ "
+echo " ( \( )( ___)( \/ )(_  _)  / __)(_  _)( ___)(  _ \/ __) "
+echo "  )  (  )__)  )  (   )(    \__ \  )(   )__)  )___/\__ \ "
+echo " (_)\_)(____)(_/\_) (__)   (___/ (__) (____)(__)  (___/ "
+echo " "
+echo "List the next steps here"
+# Stuff To Run at Startup
+# run cairo-dock
+# conky -b &
+#
 # ============================================================================
 # Make sure there is a "PiImageBuild" Directory
 # sudo mkdir PiImageBuild 
@@ -120,3 +287,4 @@ fi
 # sudo wget -O ./PiImageBuild/New_64-Bit_Pi_Build_WGET.sh https://raw.githubusercontent.com/jimTheSTEAMClown/RaspberryPi/master/New_64-Bit_Pi_Build_WGET.sh
 # sudo chmod 755 ./PiImageBuild/New_64-Bit_Pi_Build_WGET.sh
 # sudo cat ./PiImageBuild/New_64-Bit_Pi_Build_WGET.sh
+# bash ./PiImageBuild/New_64-Bit_Pi_Build_WGET.sh
