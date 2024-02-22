@@ -19,7 +19,13 @@
 # Additional Comments: 
 # see https://www.answers.com/Q/How_do_you_make_a_yes_no_command_in_cmd to add more features
 # ============================================================================
+# Cpoy These Line on the command line
+# ============================================================================
+# sudo wget -O ./classImageBuild/UbuntuClassImageUpdate.sh https://raw.githubusercontent.com/jimTheSTEAMClown/Linux/master/UbuntuClassImageUpdate.sh
+# sudo chmod 755 ./classImageBuild/UbuntuClassImageUpdate.sh
+# sudo cat ./classImageBuild/UbuntuClassImageUpdate.sh
 
+# ============================================================================
 echo "    _   _   _     _   _     _   _   _     _   _     "
 echo "   / \ / \ / \   / \ / \   / \ / \ / \   / \ / \    "
 echo "  ( N | e | w ) ( 6 | 4 ) ( B | i | t ) ( P | i )   "
@@ -101,3 +107,7 @@ echo "Skipping this install"
 else
 echo "Skipping this install"
 fi
+
+# sudo wget -O ./classImageBuild/UbuntuClassImageUpdate.sh https://raw.githubusercontent.com/jimTheSTEAMClown/Linux/master/UbuntuClassImageUpdate.sh
+# sudo chmod 755 ./classImageBuild/UbuntuClassImageUpdate.sh
+# sudo cat ./classImageBuild/UbuntuClassImageUpdate.sh
