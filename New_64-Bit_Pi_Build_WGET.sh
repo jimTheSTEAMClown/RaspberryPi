@@ -124,7 +124,7 @@ echo " \__ \( (__  )   / _)(_  )___/  )(  \__ \             "
 echo " (___/ \___)(_)\_)(____)(__)   (__) (___/             "
 echo " "
 # ============================================================================
-echo "Now I'm going to Copy Some Shell Script User For Updates and Installs Of Stuff
+echo "Now I'm going to Copy Some Shell Script User For Updates and Installs Of Stuff"
 echo " "
 echo "Do you wish to install these? Dude, just say 'Yes' Trust me."
 echo "Enter y/Y or n/N or any Key?"
