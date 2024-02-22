@@ -19,11 +19,16 @@
 # Additional Comments: 
 # see https://www.answers.com/Q/How_do_you_make_a_yes_no_command_in_cmd to add more features
 # ============================================================================
-# Cpoy These Line on the command line
+# Make sure there is a "PiImageBuild" Directory
+# sudo mkdir PiImageBuild 
 # ============================================================================
-# sudo wget -O ./classImageBuild/New_64-Bit_Pi_Build_WGET.sh https://raw.githubusercontent.com/jimTheSTEAMClown/RaspberryPi/master/New_64-Bit_Pi_Build_WGET.sh
-# sudo chmod 755 ./classImageBuild/New_64-Bit_Pi_Build_WGET.sh
-# sudo cat ./classImageBuild/New_64-Bit_Pi_Build_WGET.sh
+#
+# ============================================================================
+# Copy These Line on the command line
+# ============================================================================
+# sudo wget -O ./PiImageBuild/New_64-Bit_Pi_Build_WGET.sh https://raw.githubusercontent.com/jimTheSTEAMClown/RaspberryPi/master/New_64-Bit_Pi_Build_WGET.sh
+# sudo chmod 755 ./PiImageBuild/New_64-Bit_Pi_Build_WGET.sh
+# sudo cat ./PiImageBuild/New_64-Bit_Pi_Build_WGET.sh
 
 # ============================================================================
 echo "    _   _   _     _   _     _   _   _     _   _     "
@@ -108,7 +113,10 @@ else
 echo "Skipping this install"
 fi
 
-# sudo wget -O ./classImageBuild/New_64-Bit_Pi_Build_WGET.sh https://raw.githubusercontent.com/jimTheSTEAMClown/RaspberryPi/master/New_64-Bit_Pi_Build_WGET.sh
-# sudo chmod 755 ./classImageBuild/New_64-Bit_Pi_Build_WGET.sh
-# sudo cat ./classImageBuild/New_64-Bit_Pi_Build_WGET.sh
-# ./classImageBuild/New_64-Bit_Pi_Build_WGET.sh
+# ============================================================================
+# Make sure there is a "PiImageBuild" Directory
+# sudo mkdir PiImageBuild 
+# ============================================================================
+# sudo wget -O ./PiImageBuild/New_64-Bit_Pi_Build_WGET.sh https://raw.githubusercontent.com/jimTheSTEAMClown/RaspberryPi/master/New_64-Bit_Pi_Build_WGET.sh
+# sudo chmod 755 ./PiImageBuild/New_64-Bit_Pi_Build_WGET.sh
+# sudo cat ./PiImageBuild/New_64-Bit_Pi_Build_WGET.sh
