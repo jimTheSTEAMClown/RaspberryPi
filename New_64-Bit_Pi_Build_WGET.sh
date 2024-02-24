@@ -156,7 +156,7 @@ echo " "
 echo "-------------------------------------------------------"
 echo " Wget start_viam_server.sh "
 sudo wget -O ./viam/start_viam_server.sh https://raw.githubusercontent.com/jimTheSTEAMClown/VIAM-Party-Rover-0/main/start_viam_server.sh
-sudo chmod 755 ./start_viam_server.sh
+sudo chmod 755 ./viam/start_viam_server.sh
 sudo cat ./viam/start_viam_server.sh
 # bash ./viam/start_viam_server.sh
 echo " "
