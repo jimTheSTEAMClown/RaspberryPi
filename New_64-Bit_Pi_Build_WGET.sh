@@ -22,6 +22,10 @@
 # Make sure there is a "PiImageBuild" Directory
 # sudo mkdir PiImageBuild 
 # ============================================================================
+# ============================================================================
+# Make sure there is a "viam" Directory
+# sudo mkdir viam 
+# ============================================================================
 #
 # ============================================================================
 # Copy These Line on the command line
@@ -135,7 +139,26 @@ then
 echo "----------------------------------------------------"
 echo "Copying Shell Scripts"
 # Add Scripts Here
-echo " ******* Nothing To Copy Yet ******* "
+echo "-------------------------------------------------------"
+echo " Wget rpi_set_preferences.sh "
+sudo wget -O ./PiImageBuild/rpi_set_preferences.sh https://raw.githubusercontent.com/jimTheSTEAMClown/RaspberryPi/master/rpi_set_preferences.sh
+sudo chmod 755 ./PiImageBuild/rpi_set_preferences.sh
+sudo cat ./PiImageBuild/rpi_set_preferences.sh
+# bash ./PiImageBuild/rpi_set_preferences.sh
+echo " "
+echo "-------------------------------------------------------"
+echo " Wget viam-new-setup.sh "
+sudo wget -O ./viam/viam-new-setup.sh https://raw.githubusercontent.com/jimTheSTEAMClown/VIAM-Party-Rover-0/main/viam-new-setup.sh
+sudo chmod 755 ./viam/viam-new-setup.sh
+sudo cat ./viam/viam-new-setup.sh
+# bash ./viam/viam-new-setup.sh
+echo " "
+echo "-------------------------------------------------------"
+echo " Wget start_viam_server.sh "
+sudo wget -O ./viam/start_viam_server.sh https://raw.githubusercontent.com/jimTheSTEAMClown/VIAM-Party-Rover-0/main/start_viam_server.sh
+sudo chmod 755 ./start_viam_server.sh
+sudo cat ./viam/start_viam_server.sh
+# bash ./viam/start_viam_server.sh
 echo " "
 echo "-------------------------------------------------------"
 echo "  ___    __  _  _  ___  "
