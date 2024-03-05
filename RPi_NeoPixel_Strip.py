@@ -27,7 +27,7 @@ import time
 import neopixel
 pixels = neopixel.NeoPixel(board.D18, 30) # strip of 20 for testing.  Planned Strip has 101 Neopixels
 # ============================================================================
-def setup_test():
+def neopixel_strip_test():
    # This function tests the Neopixel strip
    pixels[0] = (255, 0, 0)
    pixels.fill((0, 255, 0))
@@ -37,7 +37,7 @@ def setup_test():
 def main():
    # This is the main function.  all your main code goes here.  
    # You can call other functions from here
-   setup_test()
+   neopixel_strip_test()
    
    # All done
 
