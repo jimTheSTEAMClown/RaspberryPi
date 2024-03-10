@@ -18,12 +18,15 @@
 #  Revision 0.01 - Created 02/21/2024
 # Additional Comments:
 # ============================================================================
-# Make sure you have the linuxCommandLab directory
-# cd ~
-# mkdir linuxCommandLab
-# sudo wget -O ./linuxCommandLab/linux-cmd-lab.sh https://raw.githubusercontent.com/jimTheSTEAMClown/RaspberryPi/master/New_64-Bit_Pi_Build_WGET.sh
-# sudo chmod 755 ./linuxCommandLab/linux-cmd-lab.sh
-# sudo cat ./linuxCommandLab/linux-cmd-lab.sh
+# copy to your /home/<USER> directory
+# sudo wget -O ./linux-cmd-lab.sh https://github.com/jimTheSTEAMClown/RaspberryPi/blob/master/linux-cmd-lab.sh
+# sudo chmod 755 ./linux-cmd-lab.sh
+# sudo cat ./linux-cmd-lab.sh
+cd ~
+mkdir linuxCommandLab
+# cd linuxCommandLab
+mkdir ./linuxCommandLab/labFiles_1
+sudo wget -O ./linuxCommandLab/labFiles_1/my_file_1.txt https://github.com/jimTheSTEAMClown/RaspberryPi/blob/master/linux_cmd_lab_my_file_1.txt
 
 
 
