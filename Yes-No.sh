@@ -18,21 +18,7 @@
 #  Revision 0.01 - Created 03/18/2024
 # Additional Comments:
 # ============================================================================
-echo " "
-echo " ______       __                __   __           "
-echo " | ___ \     / _|               \ \ / /           "
-echo " | |_/ / ___| |_ ___  _ __ ___   \ V /___  _   _  "
-echo " | ___ \/ _ \  _/ _ \| '__/ _ \   \ // _ \| | | | "
-echo " | |_/ /  __/ || (_) | | |  __/   | | (_) | |_| | "
-echo " \____/ \___|_| \___/|_|  \___|   \_/\___/ \__,_| "
-echo " "                                                 
-echo " ______                    _                 _    "
-echo " |  _  \                  | |               | |   "
-echo " | | | |_____      ___ __ | | ___   __ _  __| |   "
-echo " | | | / _ \ \ /\ / / '_ \| |/ _ \ / _` |/ _` |   "
-echo " | |/ / (_) \ V  V /| | | | | (_) | (_| | (_| |   "
-echo " |___/ \___/ \_/\_/ |_| |_|_|\___/ \__,_|\__,_|   "
-echo " "                                                                                                  
+                                                                                     
 # copy to your /home/<USER> directory
 # sudo wget -O ./yes-no.sh https://raw.githubusercontent.com/jimTheSTEAMClown/RaspberryPi/master/Yes-No.sh
 # sudo chmod 755 ./yes-no.sh
