@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # ============================================================================
 # shell script to create command line lab structure
