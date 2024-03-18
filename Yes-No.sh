@@ -34,7 +34,72 @@ echo " | |/ / (_) \ V  V /| | | | | (_) | (_| | (_| |   "
 echo " |___/ \___/ \_/\_/ |_| |_|_|\___/ \__,_|\__,_|   "
 echo " "                                                                                                  
 # copy to your /home/<USER> directory
-# sudo wget -O ./linux-cmd-lab.sh https://raw.githubusercontent.com/jimTheSTEAMClown/Linux/master/linux-cmd-lab.sh
-# sudo chmod 755 ./linux-cmd-lab.sh
-# sudo cat ./linux-cmd-lab.sh
+# sudo wget -O ./yes-no.sh https://raw.githubusercontent.com/jimTheSTEAMClown/RaspberryPi/master/Yes-No.sh
+# sudo chmod 755 ./yes-no.sh
+# sudo cat ./yes-no.sh
 # ============================================================================
+echo " "
+echo "----------------------------------------------------"
+echo "Do you wish run the Ubuntu Class Image Update?"
+echo "----------------------------------------------------"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) 
+            echo "----------------------------------------------------"
+            echo "Running Ubuntu Class Image Update" 
+            echo "----------------------------------------------------"
+            break;;
+        No ) 
+            echo "----------------------------------------------------"
+            echo "Exiting Without Update" 
+            echo "----------------------------------------------------"
+            exit;;
+    esac
+done
+# ============================================================================
+echo " "
+echo "  _  _  ___  ___   __  ____  __  _  _  __ "
+echo " ( )( )(  ,\(   \ (  )(_  _)(  )( \( )/ _) "
+echo "  )()(  ) _/ ) ) )/__\  )(   )(  )  (( (/\ "
+echo "  \__/ (_)  (___/(_)(_)(__) (__)(_)\_)\__/ "
+echo "----------------------------------------------------"
+echo "Ready... I'm going to run "
+echo "  Going to run $ sudo apt update"
+echo "  Going to run $ sudo apt upgrade with -y" 
+echo "----------------------------------------------------"
+echo "Do you wish to run UPDATE and UPGRADE?  Enter y/Y or n/N or any Key?"
+read -p "update and upgrade?: " yesInstall
+# elif statements
+if [ $yesInstall == "y" ] || [ $yesInstall == "Y" ]
+then
+echo "----------------------------------------------------"
+echo "getting home with cd ~"
+echo "----------------------------------------------------"
+echo " "
+cd ~
+pwd
+echo "----------------------------------------------------"
+echo "Running $ update"
+echo "----------------------------------------------------"
+echo " "
+sudo apt update
+echo " "
+echo "----------------------------------------------------"
+echo "Done running Update"
+echo "----------------------------------------------------"
+echo "----------------------------------------------------"
+echo "Running $ upgrade with -y"
+echo "----------------------------------------------------"
+echo " "
+sudo apt upgrade -y
+echo " "
+echo "----------------------------------------------------"
+echo "Done running Upgrade"
+echo "----------------------------------------------------"
+elif [ $yesInstall == "n" ] || [ $yesInstall == "N" ]
+then
+echo "Skipping this install"
+else
+echo "Skipping this install"
+fi
+
