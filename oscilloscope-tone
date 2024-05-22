@@ -1,0 +1,11 @@
+
+import time
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BOARD)
+GPIO.setwarnings(False)
+oscope_tone_pin = 5
+GPIO.setup(oscope_tone_pin,GPIO.OUT)
+# Super Bad Jitter and Error
+Freq = 10000000
+OSCOPE = GPIO.PWM(oscope_tone_pin, Freq)
+OSCOPE.start(50)
