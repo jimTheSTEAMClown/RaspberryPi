@@ -201,6 +201,8 @@ echo " - VIM"
 echo " - arduino"
 # echo " - notepad-plus-plus" # < nee to figure out how to install SNAP first
 echo " - conky "
+echo " - coreutils -y"
+echo "----------------------------------------------------"
 
 echo " "
 echo "Do you wish to install these? Dude, just say 'Yes' Trust me."
@@ -260,6 +262,13 @@ echo " "
 sudo apt install conky -y
 echo " "
 
+echo "----------------------------------------------------"
+echo "Installing coreutils"
+echo "Running $ sudo apt install coreutils -y"
+echo "----------------------------------------------------"
+echo " "
+sudo apt install coreutils -y
+echo " "
 
 
 echo " "
