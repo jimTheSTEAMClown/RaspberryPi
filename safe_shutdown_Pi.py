@@ -2,18 +2,23 @@
 # ============================================================================
 # Python program to safely shut down a Raspberry Pi
 # Source: Editted By STEAM Clown - www.steamclown.org
-# Original Sources: https://learn.sparkfun.com/tutorials/raspberry-pi-safe-reboot-and-shutdown-button/all#:~:text=Press%20and%20hold%20GPIO17%20button,your%20finger%20off%20the%20button.
+# Original Sources: 
+#  -  https://learn.sparkfun.com/tutorials/raspberry-pi-safe-reboot-and-shutdown-button
+#  -  https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup
 # GitHub: https://github.com/jimTheSTEAMClown/RaspberryPi
 # Hacker: Jim Burnham - STEAM Clown, Engineer, Maker, Propmaster & Adrenologist 
 #     # LICENSE: This code is released under the MIT License (http://opensource.org/licenses/MIT)
 # Program/Design Name: safe_shutdown_Pi.py
 # Description:    Python program to safely shut down a Raspberry Pi 
-# Dependencies:   
+# Dependencies:
+#     Put this python program in a directory that you can call and access:
+#     -  The script that runs this at bootup is expecting that this python script is in /home/$USER/systemScripts 
+#     -  and is called safe_shutdown_Pi.py
 # Revision: 
 #  Revision 0.03 - Updated 05/27/2024 Added Instructions for shell script setup, and just cleaned up comments and flow  
 #  Revision 0.02 - Updated 05/26/2024 for SVCTE Mechatronics Class
 #  Revision 0.01 - Created 05/26/2024
-# Additional Comments: 
+# Additional Comments:
 # ============================================================================
 # Sources: https://learn.sparkfun.com/tutorials/raspberry-pi-safe-reboot-and-shutdown-button/all#:~:text=Press%20and%20hold%20GPIO17%20button,your%20finger%20off%20the%20button.
 #     
